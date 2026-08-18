@@ -1,12 +1,388 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Aula 03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cosmo — Exploração Espacial</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+  <!-- Fundo com estrelas -->
+  <div id="stars"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">
+        COSMO<span>.</span>
+      </div>
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#planetas">Planetas</a></li>
+        <li><a href="#missoes">Missões</a></li>
+        <li><a href="#explore">Explorar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+
+          <span class="tag">
+            ✦ FRONTEIRA DO DESCONHECIDO
+          </span>
+
+          <h1>
+            Além do<br>
+            <span>infinito.</span>
+          </h1>
+
+          <p>
+            Viaje pelo universo, descubra mundos distantes
+            e conheça as missões que estão expandindo os
+            limites da exploração espacial.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#planetas" class="btn btn-primary">
+              Explorar planetas
+            </a>
+
+            <a href="#missoes" class="btn btn-outline">
+              Ver missões
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- PLANETA PRINCIPAL -->
+        <div class="planet-container">
+          <div class="planet"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ESTATÍSTICAS -->
+    <section class="stats">
+
+      <div class="stats-grid">
+
+        <div class="stat">
+          <h3 data-target="8">0</h3>
+          <p>Planetas</p>
+        </div>
+
+        <div class="stat">
+          <h3 data-target="200">0</h3>
+          <p>Bilhões de estrelas</p>
+        </div>
+
+        <div class="stat">
+          <h3 data-target="13">0</h3>
+          <p>Bilhões de anos</p>
+        </div>
+
+        <div class="stat">
+          <h3 data-target="1">0</h3>
+          <p>Universo conhecido</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PLANETAS -->
+    <section id="planetas">
+
+      <div class="section-container">
+
+        <div class="section-title">
+
+          <small>Nosso sistema</small>
+
+          <h2>Explore os planetas</h2>
+
+          <p>
+            Cada planeta possui uma história única.
+            Clique em um deles para descobrir mais.
+          </p>
+
+        </div>
+
+
+        <div class="planet-grid">
+
+          <!-- MERCÚRIO -->
+          <article
+            class="planet-card"
+            data-planet="Mercúrio"
+          >
+
+            <div class="planet-preview">
+              <div class="planet-mini mercury"></div>
+            </div>
+
+            <h3>Mercúrio</h3>
+
+            <p>
+              O menor planeta do Sistema Solar
+              e o mais próximo do Sol.
+            </p>
+
+          </article>
+
+
+          <!-- VÊNUS -->
+          <article
+            class="planet-card"
+            data-planet="Vênus"
+          >
+
+            <div class="planet-preview">
+              <div class="planet-mini venus"></div>
+            </div>
+
+            <h3>Vênus</h3>
+
+            <p>
+              Um mundo extremamente quente,
+              coberto por uma atmosfera densa.
+            </p>
+
+          </article>
+
+
+          <!-- TERRA -->
+          <article
+            class="planet-card"
+            data-planet="Terra"
+          >
+
+            <div class="planet-preview">
+              <div class="planet-mini earth"></div>
+            </div>
+
+            <h3>Terra</h3>
+
+            <p>
+              Nosso planeta azul, lar de milhões
+              de espécies e vastos oceanos.
+            </p>
+
+          </article>
+
+
+          <!-- MARTE -->
+          <article
+            class="planet-card"
+            data-planet="Marte"
+          >
+
+            <div class="planet-preview">
+              <div class="planet-mini mars"></div>
+            </div>
+
+            <h3>Marte</h3>
+
+            <p>
+              O planeta vermelho e um dos principais
+              destinos da exploração humana.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MISSÕES -->
+    <section class="missions" id="missoes">
+
+      <div class="section-container">
+
+        <div class="section-title">
+
+          <small>História espacial</small>
+
+          <h2>Grandes missões</h2>
+
+          <p>
+            Alguns dos momentos que transformaram
+            nossa visão sobre o universo.
+          </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+          <!-- MISSÃO 1 -->
+          <div class="mission">
+
+            <span class="mission-dot"></span>
+
+            <div class="mission-content">
+
+              <span>1957</span>
+
+              <h3>Sputnik 1</h3>
+
+              <p>
+                O primeiro satélite artificial da história
+                entra em órbita da Terra.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- MISSÃO 2 -->
+          <div class="mission">
+
+            <span class="mission-dot"></span>
+
+            <div class="mission-content">
+
+              <span>1969</span>
+
+              <h3>Apollo 11</h3>
+
+              <p>
+                Humanos chegam à superfície da Lua
+                pela primeira vez.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- MISSÃO 3 -->
+          <div class="mission">
+
+            <span class="mission-dot"></span>
+
+            <div class="mission-content">
+
+              <span>1990</span>
+
+              <h3>Hubble</h3>
+
+              <p>
+                O telescópio espacial começa a revelar
+                imagens impressionantes do universo.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- MISSÃO 4 -->
+          <div class="mission">
+
+            <span class="mission-dot"></span>
+
+            <div class="mission-content">
+
+              <span>2021</span>
+
+              <h3>James Webb</h3>
+
+              <p>
+                Um dos telescópios espaciais mais avançados
+                começa sua missão para observar o universo.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section id="explore" class="cta">
+
+      <div class="cta-box">
+
+        <h2>O universo espera.</h2>
+
+        <p>
+          Ainda existem bilhões de mundos para descobrir,
+          estrelas para observar e perguntas sem resposta.
+        </p>
+
+        <button class="btn btn-primary" id="exploreBtn">
+          Iniciar exploração ✦
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    COSMO © 2026 —
+    Uma experiência de exploração espacial.
+
+  </footer>
+
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <button class="modal-close" id="modalClose">
+        ×
+      </button>
+
+      <h2 id="modalTitle"></h2>
+
+      <p id="modalText"></p>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
 </body>
 </html>
